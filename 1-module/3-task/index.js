@@ -1,11 +1,7 @@
 function ucFirst(str) {
   // ваш код...
-  if (str === '') {
-    str = Number(str);
-    if (str === 0) {
-      str = '';
-      return str;
-    }
+  if (!str) {
+    return '';
   } else {
     let firstLetter = str[0].toUpperCase();
     let otherLetters = str.substring(1);

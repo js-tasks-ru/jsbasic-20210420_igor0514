@@ -7,10 +7,12 @@ return convertedStr.includes('1xbet') || convertedStr.includes('xxx');
 */
   let firstCheck = convertedStr.includes('1xbet');
   let secondCheck = convertedStr.includes('xxx');
-  if (firstCheck) {
-    return true;
-  } else if (secondCheck) {
-    return true;
-  }
-  return false;
+  //   if (firstCheck) {
+  //     return true;
+  //   } else if (secondCheck) {
+  //     return true;
+  //   }
+  //   return false;
+  // }
+  return firstCheck || secondCheck;
 }
