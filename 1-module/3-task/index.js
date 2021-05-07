@@ -6,7 +6,6 @@ function ucFirst(str) {
       str = '';
       return str;
     }
-
   } else {
     let firstLetter = str[0].toUpperCase();
     let otherLetters = str.substring(1);
