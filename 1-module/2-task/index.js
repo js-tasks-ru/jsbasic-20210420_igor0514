@@ -11,13 +11,19 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...имя не пустое, без пробелов, минимум 4 символа
-  //как убрать пробелы?
-  //как проверить на количество символов?
-  //как проверить, что имя не пустое?
-  let convertedToString = String(name);
+  if (!name) {
+    return false;
+  }
+  let whitespaceCheck = name.includes(' ');
+  if (whitespaceCheck) {
+    return false;
+  } else if (name.length >= 4) {
+    return true;
+  } else if (name.length < 4) {
+    return false;
+  }
 
 }
-
 function sayHello() {
   let userName = prompt('Введите ваше имя');
 
